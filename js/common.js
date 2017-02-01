@@ -9,24 +9,24 @@
 
 //First circle Progressbar
 var bar_first = new ProgressBar.Circle(circle_first, {
-    color: '#1718ff',
+    color: '#3c4761',
     // This has to be the same size as the maximum width to
     // prevent clipping
-    strokeWidth: 4,
-    trailWidth: 1,
+    strokeWidth: 7,
+    trailWidth: 7,
     easing: 'bounce',
     duration: 1400,
     text: {
         autoStyleContainer: false
     },
-    from: { color: '#40ff43', width: 3 },
-    to: { color: '#0bab07', width: 4 },
+    from: { color: '#30bae7', width: 7 },
+    to: { color: '#30bae7', width: 7 },
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
 
-        var value = Math.round(circle.value() * 100) + ' %';
+        var value = Math.round(circle.value() * 100) + '<span class="rate"> % </span>';
         if (value === 0) {
             circle.setText('');
         } else {
@@ -35,32 +35,32 @@ var bar_first = new ProgressBar.Circle(circle_first, {
 
     }
 });
-bar_first.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar_first.text.style.fontSize = '42px';
+bar_first.text.style.fontFamily = '"TitilliumWebLight", Helvetica, sans-serif';
+bar_first.text.style.fontSize = '50px';
 
-bar_first.animate(0.99);  // Number from 0.0 to 1.0
+bar_first.animate(0.9);  // Number from 0.0 to 1.0
 
 
 //Second circle Progressbar
 var bar_second = new ProgressBar.Circle(circle_second, {
-    color: '#01f0ff',
+    color: '#3c4761',
     // This has to be the same size as the maximum width to
     // prevent clipping
-    strokeWidth: 4,
-    trailWidth: 1,
+    strokeWidth: 7,
+    trailWidth: 7,
     easing: 'bounce',
     duration: 1400,
     text: {
         autoStyleContainer: false
     },
-    from: { color: '#ff95e8', width: 1 },
-    to: { color: '#ff20d4', width: 5 },
+    from: { color: '#d74680', width: 7 },
+    to: { color: '#d74680', width: 7 },
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
 
-        var value = Math.round(circle.value() * 100);
+        var value = Math.round(circle.value() * 100) + '<span class="rate"> % </span>';
         if (value === 0) {
             circle.setText('');
         } else {
@@ -69,31 +69,31 @@ var bar_second = new ProgressBar.Circle(circle_second, {
 
     }
 });
-bar_second.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar_second.text.style.fontSize = '42px';
+bar_second.text.style.fontFamily = '"TitilliumWebLight", Helvetica, sans-serif';
+bar_second.text.style.fontSize = '50px';
 
 bar_second.animate(0.75);  // Number from 0.0 to 1.0
 
 //Third circle Progressbar
 var bar_third = new ProgressBar.Circle(circle_third, {
-    color: '#1718ff',
+    color: '#3c4761',
     // This has to be the same size as the maximum width to
     // prevent clipping
-    strokeWidth: 4,
-    trailWidth: 4,
+    strokeWidth: 7,
+    trailWidth: 7,
     easing: 'bounce',
     duration: 1400,
     text: {
         autoStyleContainer: false
     },
-    from: { color: '#fff114', width: 1 },
-    to: { color: '#13ff0e', width: 5 },
+    from: { color: '#15c7a8', width: 7 },
+    to: { color: '#15c7a8', width: 7 },
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
 
-        var value = Math.round(circle.value() * 100);
+        var value = Math.round(circle.value() * 100) + '<span class="rate"> % </span>';
         if (value === 0) {
             circle.setText('');
         } else {
@@ -102,31 +102,31 @@ var bar_third = new ProgressBar.Circle(circle_third, {
 
     }
 });
-bar_third.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar_third.text.style.fontSize = '42px';
+bar_third.text.style.fontFamily = '"TitilliumWebLight", Helvetica, sans-serif';
+bar_third.text.style.fontSize = '50px';
 
-bar_third.animate(0.5);  // Number from 0.0 to 1.0
+bar_third.animate(0.7);  // Number from 0.0 to 1.0
 
 //Fourth circle Progressbar
 var bar_fourth = new ProgressBar.Circle(circle_fourth, {
-    color: '#01f0ff',
+    color: '#3c4761',
     // This has to be the same size as the maximum width to
     // prevent clipping
-    strokeWidth: 4,
-    trailWidth: 1,
+    strokeWidth: 7,
+    trailWidth: 7,
     easing: 'easeInOut',
     duration: 1400,
     text: {
         autoStyleContainer: false
     },
-    from: { color: '#ff95e8', width: 1 },
-    to: { color: '#ff20d4', width: 5 },
+    from: { color: '#eb7d4b', width: 7 },
+    to: { color: '#eb7d4b', width: 7 },
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
 
-        var value = Math.round(circle.value() * 100);
+        var value = Math.round(circle.value() * 100) + '<span class="rate"> % </span>';
         if (value === 0) {
             circle.setText('');
         } else {
@@ -135,7 +135,7 @@ var bar_fourth = new ProgressBar.Circle(circle_fourth, {
 
     }
 });
-bar_fourth.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar_fourth.text.style.fontSize = '42px';
+bar_fourth.text.style.fontFamily = '"TitilliumWebLight", Helvetica, sans-serif';
+bar_fourth.text.style.fontSize = '50px';
 
-bar_fourth.animate(0.75);  // Number from 0.0 to 1.0
+bar_fourth.animate(0.85);  // Number from 0.0 to 1.0
