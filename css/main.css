@@ -81,8 +81,8 @@ h1, h2 {
 
 .header .header_body .work_us:hover {
     background-color: #ffffff;
-    color: #643a79;
-    border-bottom: 5px solid #eb7d4b;
+    color: #c86a40;
+    border: 2px solid #eb7d4b;
 }
 
 /* SERVICE */
@@ -206,7 +206,123 @@ h1, h2 {
     font-size: 32px;
 }
 
+/* PORTFOLIO */
+.portfolio {
+    width: 100%;
+    height: 1423px;
+    background: #ffdd99;
+    color: #393939;
+}
+.portfolio .portfolio_txt {
+    margin-top: 100px;
+}
+.portfolio .portfolio_txt .portfolio_h2 {
+    font-size: 40px;
+}
+.portfolio .portfolio_txt .portfolio_line {
+    background: #e5c37f;
+    width: 85px;
+    height: 4px;
+    border: none;
+    text-align: center;
+}
+.portfolio .portfolio_txt .portfolio_p {
+    font-family: "TitilliumWebRegular";
+    font-size: 18px;
+}
+.portfolio .load_project {
+    width: 290px;
+    height: 65px;
+    font-family: "TitilliumWebSemiBold";
+    font-size: 18px;
+    color: #ffffff;
+    background: #17c2a4;
+    border: none;
+    border-bottom: 5px solid #14a58c;
+    cursor: pointer;
+    webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.portfolio .load_project:hover {
+    background-color: #ffffff;
+    color: #14a58c;
+    border: 2px solid #17c2a4;
+}
 
+/* POEPLE ABOUT US */
+.people_about_us {
+    height: 895px;
+    width: 100%;
+    background: #d74680;
+    color: #ffffff;
+}
+.people_about_us .people_about_txt {
+    margin-top: 100px;
+}
+.people_about_us .people_about_txt .people_about_h2 {
+    color: #ffffff;
+    font-size: 40px;
+}
+.people_about_us .people_about_txt .people_about_line {
+    background: #b73c6d;
+    width: 85px;
+    height: 4px;
+    border: none;
+    text-align: center;
+}
+.people_about_us .people_about_txt .people_about_p {
+    font-family: "TitilliumWebRegular";
+    font-size: 18px;
+}
+.people_about_us .people_about_body {
+    margin-top: 85px;
+}
+.people_about_us .people_about_body img {
+    margin-left: 40px;
+}
+.people_about_us .people_about_body .people {
+    margin-top: 150px;
+}
+.people_about_us .people_about_body  .quote {
+    font-family: "TitilliumWebItalic";
+    font-size: 18px;
+}
+.people_about_us .people_about_body .people_h5 {
+    font-family: "TitilliumWebBold";
+    font-size: 22px;
+    margin-bottom: -2px;
+    margin-top: 20px;
+}
+.people_about_us .people_about_body .people_position {
+    font-family: "TitilliumWebRegular";
+    font-size: 16px;
+    color: #ffdd99;
+}
 
+/* GET IN TOUCH */
+.get_touch {
+    height: 819px;
+    width: 100%;
+    background: #3c5499;
+    color: #ffffff;
+}
+.get_touch .get_touch_txt {
+    margin-top: 100px;
+}
+.get_touch .get_touch_txt .get_touch_txt {
+    font-size: 40px;
 
-
+}
+.get_touch .get_touch_txt .get_touch_line {
+    background: #273a71;
+    width: 85px;
+    height: 4px;
+    border: none;
+    text-align: center;
+}
+.get_touch .get_touch_txt .get_touch_p {
+    font-family:"TitilliumWebRegular";
+    font-size: 18px;
+}

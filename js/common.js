@@ -139,3 +139,4 @@ bar_fourth.text.style.fontFamily = '"TitilliumWebLight", Helvetica, sans-serif';
 bar_fourth.text.style.fontSize = '50px';
 
 bar_fourth.animate(0.85);  // Number from 0.0 to 1.0
+
