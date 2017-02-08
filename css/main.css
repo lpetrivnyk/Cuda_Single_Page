@@ -13,28 +13,41 @@ h1, h2 {
     font-family: "TitilliumWebBold";
 }
 
+.img-responsive {
+    margin: 0 auto;
+}
 
 /* HEADER */
-
 .header {
     height: 595px;
     width: 100%;
     background: #87509c;
 }
+/* LOGO */
+.header .logo {
+    z-index: 2;
+    cursor: default;
+    transition: .3s linear;
+}
+.header .logo:hover {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+}
+/* NAVIGATION */
 .header .navigation {
     padding-top: 55px;
 }
 .header .navigation .navigation_bar {
-    margin: 0; /* Обнуляем значение отступов */
-    padding: 4px; /* Значение полей */
+    margin: 0;
+    padding: 4px;
     float: right;
 }
 .header .navigation .navigation_bar li {
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 10px; /* Отступ слева */
+    display: inline;
+    margin-right: 10px;
     border: none;
     border-radius: 5px;
-    padding: 10px 18px; /* Поля вокруг текста */
+    padding: 10px 18px;
     font-family: "TitilliumWebRegular";
     font-size: 16px;
     color: #ffffff;
@@ -51,10 +64,10 @@ h1, h2 {
     text-decoration: none;
 }
 
+/* HEADER BODY */
 .header .header_body {
     text-align: center;
     margin-top: 145px;
-
 }
 .header .header_body .slogan {
     font-size: 42px;
@@ -69,20 +82,19 @@ h1, h2 {
     font-size: 18px;
     color: #ffffff;
     border: none;
-    border-bottom: 5px solid #c86a40;
+    border-bottom: 4px solid #c86a40;
     border-radius: 5px;
     margin-top: 60px;
     cursor: pointer;
-    webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-
 .header .header_body .work_us:hover {
     background-color: #ffffff;
     color: #c86a40;
-    border: 2px solid #eb7d4b;
+    border-bottom: 4px solid #eb7d4b;
 }
 
 /* SERVICE */
@@ -92,11 +104,14 @@ h1, h2 {
     background: #17c2a4;
     color: #ffffff;
 }
+
+/* SERVICE TEXT */
 .service .service_txt {
     margin-top: 100px;
 }
 .service .service_txt .service_h2 {
     font-size: 40px;
+    margin-bottom: 15px;
 }
 .service .service_txt .service_line {
     background-color: #14a58c;
@@ -108,7 +123,10 @@ h1, h2 {
 .service .service_txt .service_txt_p {
     font-family: "TitilliumWebRegular";
     font-size: 18px;
+    margin-top: 20px;
 }
+
+/* SERVICE LIST*/
 .service .service_list {
     margin-top: 80px;
 }
@@ -130,11 +148,14 @@ h1, h2 {
     height: 900px;
     color: #3c4761;
 }
+
+/* TEAM TEXT */
 .team .team_txt {
     margin-top: 100px;
 }
 .team .team_txt .team_h2 {
     font-size: 41px;
+    margin-bottom: 15px;
 }
 .team .team_txt .team_line {
     width: 85px;
@@ -145,7 +166,10 @@ h1, h2 {
 .team .team_txt .team_p {
     font-family: "TitilliumWebRegular";
     font-size: 18px;
+    margin-top: 20px;
 }
+
+/* TEAM BODY*/
 .team .team_body {
     margin-top: 80px;
 }
@@ -163,6 +187,11 @@ h1, h2 {
     font-size: 16px;
     margin-top: 30px;
 }
+.team .team_body .team_social_bar .social_zoom {
+    cursor: pointer;
+    transition:.5s linear;
+}
+.team .team_body .team_social_bar .social_zoom:hover { -webkit-transform: scale(1.1); transform: scale(1.1);}
 
 /* SKILLS */
 .skills {
@@ -171,12 +200,17 @@ h1, h2 {
     background: #ffffff;
     color: #3c4761;
 }
+
+/* SKILLS TEXT*/
 .skills .skills_txt {
     margin-top: 100px;
 }
 .skills .skills_h2 {
     font-size: 40px;
+    margin-bottom: 15px;
 }
+
+/* SKILLS LINE*/
 .skills .skills_line {
     width: 85px;
     height: 4px;
@@ -186,7 +220,10 @@ h1, h2 {
 .skills .skills_p {
     font-family: "TitilliumWebRegular";
     font-size: 18px;
+    margin-top: 20px;
 }
+
+/* SKILLS BODY*/
 .skills .skills_body {
     margin-top: 80px;
 }
@@ -213,11 +250,14 @@ h1, h2 {
     background: #ffdd99;
     color: #393939;
 }
+
+/* PORTFOLIO TEXT*/
 .portfolio .portfolio_txt {
     margin-top: 100px;
 }
 .portfolio .portfolio_txt .portfolio_h2 {
     font-size: 40px;
+    margin-bottom: 15px;
 }
 .portfolio .portfolio_txt .portfolio_line {
     background: #e5c37f;
@@ -229,7 +269,10 @@ h1, h2 {
 .portfolio .portfolio_txt .portfolio_p {
     font-family: "TitilliumWebRegular";
     font-size: 18px;
+    margin-top: 20px;
 }
+
+/* PORTFOLIO BUTTON LOAD PROJECT*/
 .portfolio .load_project {
     width: 290px;
     height: 65px;
@@ -238,32 +281,35 @@ h1, h2 {
     color: #ffffff;
     background: #17c2a4;
     border: none;
-    border-bottom: 5px solid #14a58c;
+    border-bottom: 4px solid #14a58c;
     cursor: pointer;
-    webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .portfolio .load_project:hover {
     background-color: #ffffff;
     color: #14a58c;
-    border: 2px solid #17c2a4;
+    border-bottom: 4px solid #17c2a4;
 }
 
-/* POEPLE ABOUT US */
+/* PEOPLE ABOUT US */
 .people_about_us {
     height: 895px;
     width: 100%;
     background: #d74680;
     color: #ffffff;
 }
+
+/* PEOPLE ABOUT US TEXT */
 .people_about_us .people_about_txt {
     margin-top: 100px;
 }
 .people_about_us .people_about_txt .people_about_h2 {
     color: #ffffff;
     font-size: 40px;
+    margin-bottom: 15px;
 }
 .people_about_us .people_about_txt .people_about_line {
     background: #b73c6d;
@@ -275,7 +321,10 @@ h1, h2 {
 .people_about_us .people_about_txt .people_about_p {
     font-family: "TitilliumWebRegular";
     font-size: 18px;
+    margin-top: 20px;
 }
+
+/* POEPLE ABOUT US BODY */
 .people_about_us .people_about_body {
     margin-top: 85px;
 }
@@ -308,12 +357,14 @@ h1, h2 {
     background: #3c5499;
     color: #ffffff;
 }
+
+/* GET IN TOUCH TEXT*/
 .get_touch .get_touch_txt {
     margin-top: 100px;
 }
-.get_touch .get_touch_txt .get_touch_txt {
+.get_touch .get_touch_txt .get_touch_h2 {
     font-size: 40px;
-
+    margin-bottom: 15px;
 }
 .get_touch .get_touch_txt .get_touch_line {
     background: #273a71;
@@ -325,4 +376,126 @@ h1, h2 {
 .get_touch .get_touch_txt .get_touch_p {
     font-family:"TitilliumWebRegular";
     font-size: 18px;
+    margin-top: 20px;
+}
+
+/* GET IN TOUCH BODY */
+.get_touch .get_touch_body {
+    margin-top: 70px;
+    font-family: "TitilliumWebRegular";
+    font-size: 18px;
+    color: #ffffff;
+}
+/* GET IN TOUCH FORM*/
+.get_touch .get_touch_body .name_email_form .name_form {
+    width: 390px;
+    height: 55px;
+    margin-left: 65px;
+    background-color: #273a71;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.get_touch .get_touch_body .name_email_form .email_form {
+    width: 390px;
+    height: 55px;
+    margin-left: -55px;
+    background-color: #273a71;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.get_touch .get_touch_body .message .message_form {
+    width: 819px;
+    margin-left: 3px;
+    margin-top: 25px;
+    height: 200px;
+    background-color: #273a71;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+input[type="text"]::-webkit-input-placeholder, textarea[name="comment"]::-webkit-input-placeholder {color: #ffffff; text-overflow:ellipsis;}
+input[type="text"]::-moz-placeholder, textarea[name="comment"]::-moz-placeholder {color: #ffffff; text-overflow:ellipsis;}
+input[placeholder] {text-overflow:ellipsis; text-indent: 0;}
+input::-moz-placeholder {text-overflow:ellipsis; text-indent: 0;}
+input:-moz-placeholder { text-overflow:ellipsis; text-indent: 0;}
+input:-ms-input-placeholder {text-overflow:ellipsis; text-indent: 0;}
+input::-webkit-input-placeholder       {text-indent: 0;   transition: text-indent 0.3s ease;}
+input::-moz-placeholder                {text-indent: 0;   transition: text-indent 0.3s ease;}
+input:-moz-placeholder                 {text-indent: 0;   transition: text-indent 0.3s ease;}
+input:-ms-input-placeholder            {text-indent: 0;   transition: text-indent 0.3s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+textarea[id="comment"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+textarea[id="comment"]::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+textarea[id="comment"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+textarea[id="comment"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+textarea[id="comment"]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+textarea[id="comment"]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+textarea[id="comment"]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+textarea[id="comment"]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.get_touch .get_touch_body .send_message .send_message_btn {
+    margin-top: 50px;
+    font-family: "TitilliumWebSemiBold";
+    font-size: 18px;
+    color: #ffffff;
+    height: 65px;
+    width: 290px;
+    background: #30bae7;
+    border: none;
+    border-bottom: 4px solid #299ec5;
+    webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.get_touch .get_touch_body .send_message .send_message_btn:hover {
+    background-color: #ffffff;
+    color: #299ec5;
+    border-bottom: 4px solid #30bae7;
+}
+
+/* FOOTER */
+.footer {
+    height: 110px;
+    width: 100%;
+    border-top: 1px solid #3c5499;
+    background: #344b8e;
+}
+
+/* FOOTER SOCIAL BAR */
+.footer ul.social_footer {
+    margin: 0;
+    padding: 4px;
+    margin-top: 40px;
+}
+.footer ul.social_footer a li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px 30px;
+}
+.footer ul.social_footer a li:first-child {
+    margin-right: 0;
+}
+.footer ul.social_footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "TitilliumWebSemiBold";
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.footer ul.social_footer a:hover, .footer ul.social_footer a:active {
+    color: #30bae7;
 }

@@ -140,18 +140,18 @@
     width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
 }
 
-/* 3 Columns */
+/* 1 Columns */
 
 @media screen and (min-width: 541px) {
     .mix,
     .gap {
-        width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+        width: calc(100%/1 - (((2 - 1) * 1rem) / 1));
     }
 }
 
-/* 4 Columns */
+/* 2 Columns */
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 768px) {
     .mix,
     .gap {
         width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
