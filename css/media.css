@@ -10,14 +10,77 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 
+    /* GET IN TOUCH FORM*/
+    .get_touch .get_touch_body .name_email_form .email_form {
+
+        margin-left: 245px;
+    }
+
+    /* FOOTER SOCIAL BAR */
+    .footer ul.social_footer a li {
+        padding: 3px 20px;
+    }
+
+    .footer ul.social_footer a {
+        font-size: 18px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+    /* NAVIGATION */
+    .header .navigation .navigation_bar li {
+        margin-right: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    /* HEADER BODY */
+    .header .header_body {
+        text-align: center;
+        margin-top: 140px;
+    }
+    .header .header_body .slogan {
+        font-size: 36px;
+    }
+    .header .header_body .work_us {
+        margin-bottom: 120px;
+    }
+    /* SERVICE */
+    .service {
+        height: 800px;
+    }
+
+    /* SERVICE TEXT */
+    .service .service_txt {
+        margin-top: 50px;
+    }
+    .service .service_txt .service_h2 {
+        font-size: 24px;
+
+    }
+    .service .service_txt .service_txt_p {
+        font-size: 18px;
+    }
+
+    /* SERVICE LIST*/
+    .service .service_list {
+        margin-top: 50px;
+    }
+    .service .service_list .list_title {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .service .service_list .list_txt {
+        font-size: 14px;
+        margin-top: 20px;
+    }
 
 
 
 
+    .get_touch .get_touch_body .message .message_form {
+        width: 619px;
+    }
 }
 
 /* Small Devices, Tablets */

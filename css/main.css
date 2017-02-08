@@ -25,13 +25,7 @@ h1, h2 {
 }
 /* LOGO */
 .header .logo {
-    z-index: 2;
     cursor: default;
-    transition: .3s linear;
-}
-.header .logo:hover {
-      -webkit-transform: rotate(15deg);
-      transform: rotate(15deg);
 }
 /* NAVIGATION */
 .header .navigation {
@@ -417,8 +411,10 @@ h1, h2 {
     padding-top: 20px;
 }
 
-input[type="text"]::-webkit-input-placeholder, textarea[name="comment"]::-webkit-input-placeholder {color: #ffffff; text-overflow:ellipsis;}
-input[type="text"]::-moz-placeholder, textarea[name="comment"]::-moz-placeholder {color: #ffffff; text-overflow:ellipsis;}
+input[type="text"]::-webkit-input-placeholder {color: #ffffff; text-overflow:ellipsis;}
+textarea[name="comment"]::-webkit-input-placeholder {color: #ffffff; text-overflow:ellipsis;}
+input[type="text"]::-moz-placeholder {color: #ffffff; text-overflow:ellipsis;}
+textarea[name="comment"]::-moz-placeholder {color: #ffffff; text-overflow:ellipsis;}
 input[placeholder] {text-overflow:ellipsis; text-indent: 0;}
 input::-moz-placeholder {text-overflow:ellipsis; text-indent: 0;}
 input:-moz-placeholder { text-overflow:ellipsis; text-indent: 0;}

@@ -88,7 +88,7 @@
 }
 
 .control[data-filter] + .control[data-sort] {
-    margin-left: .75rem;
+        margin-left: .75rem;
 }
 
 /* Container
@@ -145,7 +145,7 @@
 @media screen and (min-width: 541px) {
     .mix,
     .gap {
-        width: calc(100%/1 - (((2 - 1) * 1rem) / 1));
+        width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
     }
 }
 
