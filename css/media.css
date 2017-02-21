@@ -1,100 +1,187 @@
-/*!
- * Copyright 2017 by Petrivnyk
- * https://www.facebook.com/profile.php?id=100005683967607
- * https://vk.com/lubomyr_petrivnyk
- * l.petrivnyk@gmail.com */
-
-
-/*==========  Desktop First Method  ==========*/
+/* =============================================
+ *
+ *
+ *
+ *  https://www.facebook.com/profile.php?id=100005683967607
+ *  https://vk.com/lubomyr_petrivnyk
+ *  l.petrivnyk@gmail.com
+ *  by Petrivnyk
+ *  (c) 2017
+ *
+ *
+ *
+ * ============================================= */
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1199px) {
+@media only screen and (max-width: 1200px) {
 
-    /* GET IN TOUCH FORM*/
-    .get_touch .get_touch_body .name_email_form .email_form {
-
-        margin-left: 245px;
-    }
-
-    /* FOOTER SOCIAL BAR */
-    .footer ul.social_footer a li {
-        padding: 3px 20px;
-    }
-
-    .footer ul.social_footer a {
-        font-size: 18px;
+    .people p.information {
+        height: 100px;
     }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 991px) {
-    /* NAVIGATION */
-    .header .navigation .navigation_bar li {
-        margin-right: 10px;
-        padding: 5px 10px;
-        font-size: 16px;
+@media only screen and (max-width: 991px) {
+
+    /* GLOBAl */
+    .title_section {
+        margin-top: 80px;
     }
-    /* HEADER BODY */
-    .header .header_body {
-        text-align: center;
-        margin-top: 140px;
-    }
-    .header .header_body .slogan {
-        font-size: 36px;
-    }
-    .header .header_body .work_us {
-        margin-bottom: 120px;
+
+    .list_menu>.item_menu>a {
+        padding: 10px 12px;
     }
     /* SERVICE */
     .service {
-        height: 800px;
+        height: 900px;
     }
+    .development, .rocket_science {
+        margin-top: 30px;
+    }
+    /* TEAM */
+    .team {
+        height: 1250px;
+    }
+    .body_team {
+        margin-top: 35px;
+    }
+    .people {
+        margin-top: 40px;
+    }
+    .people p.information {
+        height: auto;
+    }
+    /* SKILLS */
+    .skills {
+        height: 870px;
+    }
+    .circle_third, .circle_fourth {
+        margin-top: 40px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
 
-    /* SERVICE TEXT */
-    .service .service_txt {
+
+}
+
+@media only screen and (max-width: 767px) {
+    /* GLOBAL */
+    h2 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    .title_section {
         margin-top: 50px;
     }
-    .service .service_txt .service_h2 {
-        font-size: 24px;
-
+    .title_section p {
+        margin-top: 12px;
+        font-size: 16px;
     }
-    .service .service_txt .service_txt_p {
-        font-size: 18px;
-    }
-
-    /* SERVICE LIST*/
-    .service .service_list {
+    .body_section {
         margin-top: 50px;
     }
-    .service .service_list .list_title {
+
+
+
+
+    .logo {
+        padding-top: 15px;
+    }
+    .list_menu {
+        padding-top: 15px;
+    }
+    .list_menu .item_menu {
+        padding: 0;
+    }
+    .navbar-collapse {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        -webkit-box-shadown: none;
+    }
+    .list_menu>.item_menu>a {
+        padding: 10px 25px;
+    }
+
+    .header .header_txt {
+        margin-top: 120px;
+    }
+    .header_txt h1.slogan {
+        font-size: 36px;
+    }
+
+    /* SERVICE */
+    .service {
+        height: 1150px;
+    }
+    .body_service h4 {
         font-size: 20px;
-        text-transform: uppercase;
+        margin-top: 20px;
     }
-    .service .service_list .list_txt {
-        font-size: 14px;
+    .body_service p {
+        font-size: 16px;
+        font-family: "TitilliumWebLight";
+        margin-top: 10px;
+    }
+    .design, .development, .rocket_science {
+        margin-top: 20px;
+    }
+
+    /* TEAM */
+
+    .team {
+        height: 2000px;
+    }
+    .people {
+        margin-top: 30px;
+    }
+    .body_team {
         margin-top: 20px;
     }
 
 
-
-
-    .get_touch .get_touch_body .message .message_form {
-        width: 619px;
-    }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
-
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width: 480px) {
 
+    /* GLOBAL */
+    h2 {
+        font-size: 26px;
+    }
+    .title_section {
+        margin-top: 50px;
+    }
+    .title_section p {
+        font-size: 14px;
+    }
+
+    /* SERVICE */
+    .service {
+        height: 1170px;
+    }
+    .body_service p {
+        font-size: 14px;
+    }
+
+    /* TEAM */
+
+    .team {
+        height: 1910px;
+    }
+    .people h4.name_people {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .people p.information {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .people .social_people {
+        margin-top: 15px;
+    }
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
 
-}
 
