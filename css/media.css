@@ -13,11 +13,36 @@
  * ============================================= */
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
 
+    /* TEAM */
     .people p.information {
         height: 100px;
     }
+
+    /* PORTFOLIO */
+    .body_sorting {
+        height: 780px;
+    }
+
+    /* ABOUT US */
+    .about_us {
+        height: 920px;
+    }
+
+    /* GET IN TOUCH */
+    .body_get_in_touch input {
+        height: 50px;
+        width: 350px;
+    }
+    .body_get_in_touch input#name {
+        margin-left: 22.5%;
+    }
+    .body_get_in_touch textarea#message {
+        width: 77.5%;
+        margin-left: 11%;
+    }
+
 }
 
 /* Medium Devices, Desktops */
@@ -27,10 +52,10 @@
     .title_section {
         margin-top: 80px;
     }
-
-    .list_menu>.item_menu>a {
+    .list_menu > .item_menu > a {
         padding: 10px 12px;
     }
+
     /* SERVICE */
     .service {
         height: 900px;
@@ -38,6 +63,7 @@
     .development, .rocket_science {
         margin-top: 30px;
     }
+
     /* TEAM */
     .team {
         height: 1250px;
@@ -51,20 +77,62 @@
     .people p.information {
         height: auto;
     }
+
     /* SKILLS */
     .skills {
         height: 870px;
     }
+
     .circle_third, .circle_fourth {
         margin-top: 40px;
     }
+
+    /* PORTFOLIO */
+    .portfolio {
+        height: 1100px;
+    }
+    .body_sorting {
+        height: 650px;
+    }
+    button.load_project {
+        margin-top: 0;
+    }
+
+    /* ABOUT US */
+    .body_about_us .first_section, .body_about_us .second_section {
+        text-align: center;
+    }
+    .body_about_us .bottom {
+        margin-top: 50px;
+    }
+    .about_us {
+        height: 980px;
+    }
+
+    /* GET IN TOUCH */
+    .body_get_in_touch input {
+        width: 100%;
+        height: 60px;
+    }
+    .body_get_in_touch input#name {
+        margin-left: 0;
+        margin-bottom: 20px;
+
+    }
+    .body_get_in_touch textarea#message {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* FOOTER */
+    li.footer_item {
+        font-size: 18px;
+    }
+    .scrollup{
+        bottom:50px;
+        right:50px;
+    }
 }
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-
-
-}
-
 @media only screen and (max-width: 767px) {
     /* GLOBAL */
     h2 {
@@ -82,9 +150,7 @@
         margin-top: 50px;
     }
 
-
-
-
+    /* HEADER */
     .logo {
         padding-top: 15px;
     }
@@ -113,7 +179,7 @@
 
     /* SERVICE */
     .service {
-        height: 1150px;
+        height: 1200px;
     }
     .body_service h4 {
         font-size: 20px;
@@ -129,9 +195,8 @@
     }
 
     /* TEAM */
-
     .team {
-        height: 2000px;
+        height: 2050px;
     }
     .people {
         margin-top: 30px;
@@ -140,8 +205,51 @@
         margin-top: 20px;
     }
 
+    /* PORTFOLIO */
+    .portfolio {
+        height: 900px;
+    }
 
+    /* ABOUT US */
+    .about_us {
+        height: 1290px !important;
+    }
+    .body_about_us .first_section, .body_about_us .second_section {
+        text-align: center;
+    }
+    .body_about_us .second_section {
+        margin-top: 0;
+    }
+    .second_review, .third_review, .fourth_review {
+        margin-top: 30px;
+    }
+    .body_about_us .bottom {
+        margin-top: 20px;
+    }
+    .about_us {
+        height: 980px;
+    }
+
+    /* GET IN TOUCH */
+    .get_in_touch {
+        height: 730px;
+    }
+
+    .scrollup{
+        width:64px;
+        height:64px;
+        bottom:50px;
+        right:30px;
+        background: url('../img/up_small.png') no-repeat;
+    }
 }
+
+@media only screen and (max-width: 497px) {
+    .team {
+        height: 2090px;
+    }
+}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -149,26 +257,32 @@
     /* GLOBAL */
     h2 {
         font-size: 26px;
+        margin-bottom: 15px;
     }
     .title_section {
         margin-top: 50px;
     }
     .title_section p {
-        font-size: 14px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    /* HEADER */
+    button.work_us {
+        width: 270px;
     }
 
     /* SERVICE */
     .service {
-        height: 1170px;
+        height: 1250px;
     }
     .body_service p {
         font-size: 14px;
     }
 
     /* TEAM */
-
     .team {
-        height: 1910px;
+        height: 1950px;
     }
     .people h4.name_people {
         font-size: 20px;
@@ -180,6 +294,30 @@
     }
     .people .social_people {
         margin-top: 15px;
+    }
+
+    /* PORTFOLIO */
+    .portfolio {
+        display: none;
+    }
+
+    /* ABOUT US */
+    .about_us {
+        height: 1440px !important;
+    }
+
+    /* FOOTER */
+    li.footer_item  {
+        font-size: 14px;
+    }
+
+    /* SCROLLUP */
+    .scrollup{
+        width: 48px;
+        height: 48px;
+        bottom:30px;
+        right:15px;
+        background: url('../img/up_small.png') no-repeat;
     }
 }
 

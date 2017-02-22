@@ -9,10 +9,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Власний css-файл -->
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/sorting.css" rel="stylesheet">
     <!-- Медіа-запити -->
     <link href="css/media.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
@@ -20,7 +24,7 @@
             <div class="container">
                 <!-- Бренд та перемикач згруповані для кращого відображення на мобільних пристроях -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="btn_menu">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -42,7 +46,7 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-        <div class="header_txt text-center">
+        <div class="header_txt text-center" id="header_txt">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -50,7 +54,7 @@
                             Hi there! We are the new kids on the block <br />
                             and we build awesome websites and mobile apps.
                         </h1>
-                        <button class="work_us">WORK WITH US!</button>
+                        <a href="#"><button class="work_us btn_glob ">WORK WITH US!</button></a>
                     </div>
                 </div>
             </div>
@@ -212,8 +216,213 @@
             </div> <!-- Body Skills -->
         </div>
     </section> <!-- /section skills -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="title_portfolio title_section text-center">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>OUR PORTFOLIO</h2>
+                        <div class="line"></div>
+                        <p class="col-md-6 col-md-offset-3">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                            consectetur, adipisci velit, sed quia non numquam</p>
+                    </div>
+                </div>
+            </div> <!-- /title_portfolio -->
+            <div class="body_portfolio">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="controls">
+                            <button type="button" class="control" data-filter="all">ALL</button>
+                            <button type="button" class="control" data-filter=".web">WEB</button>
+                            <button type="button" class="control" data-filter=".apps">APPS</button>
+                            <button type="button" class="control" data-filter=".icons">ICONS</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="body_sorting text-center">
+                            <div class="mix web">
+                                <img src="img/isometric_mock_up.png" alt="" class="img-responsive">
+                                <h5>Isometric Perspective Mock-Up</h5>
+                            </div>
+                            <div class="mix apps">
+                                <img src="img/viro_media.png" alt="" class="img-responsive">
+                                <h5>Time Zone App UI</h5>
+                            </div>
+                            <div class="mix icons">
+                                <img src="img/time_zone.png" alt="" class="img-responsive">
+                                <h5>Viro Media Players UI</h5>
+                            </div>
+                            <div class="mix">
+                                <img src="img/flat_ui.png" alt="" class="img-responsive">
+                                <h5>Blog / Magazine Flat UI Kit</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <a href="#"><button class="load_project btn_glob">LOAD MORE PROJECTS</button></a>
+                    </div>
+                </div>
 
 
+            </div> <!-- /body_portfolio -->
+        </div>
+    </section> <!-- /section portfolio -->
+    <section class="about_us">
+        <div class="container">
+            <div class="title_about_us title_section text-center">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>WHAT POEPLE SAY ABOUT US</h2>
+                        <div class="line"></div>
+                        <p>Our clients love us!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="body_about_us title_section">
+                <div class="first_section">
+                    <div class="row">
+                        <div class="first_review">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <img src="img/people.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="blockquote">
+                                            “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+                                        </p>
+                                        <div class="top">
+                                            <h5>Chanel Iman</h5>
+                                            <p class="status">CEO of Pinterest</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /first_review -->
+                        <div class="second_review">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <img src="img/people.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="blockquote">
+                                            “Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                                        </p>
+                                        <div class="top">
+                                            <h5>Adriana Lima</h5>
+                                            <p class="status">Founder of Instagram</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /second_review -->
+                    </div>
+                </div> <!-- /first_section -->
+                <div class="second_section">
+                    <div class="row ">
+                        <div class="third_review">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <img src="img/people.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="blockquote">
+                                            “Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                                        </p>
+                                        <div class="bottom">
+                                            <h5>Anne Hathaway</h5>
+                                            <p class="status">Lead Designer at Behance</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /third_review -->
+                        <div class="fourth_review">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <img src="img/people.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="blockquote">
+                                            “Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”
+                                        </p>
+                                        <div class="top">
+                                            <h5>Emma Stone</h5>
+                                            <p class="status">Co-Founder of Shazam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /fourth_review -->
+                    </div>
+                </div> <!-- /second_section -->
+            </div>
+        </div>
+    </section> <!-- section about_us -->
+    <section class="get_in_touch">
+        <div class="container">
+            <div class="title_get_in_touch title_section text-center">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>GET IN TOUCH</h2>
+                        <div class="line"></div>
+                        <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+                    </div>
+                </div>
+            </div> <!-- /title_get_in_touch -->
+            <div class="body_get_in_touch body_section">
+                <form id="#" action="#" method="POST" name=" application ">
+                    <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <input name="name" id="name" placeholder="Your Name *" required />
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <input name="email" type="email" id="email"  placeholder="Your Email *" required />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <textarea name="message" id="message" class="txtarea" placeholder="Your Message *"  required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <button class="send btn_glob" id="send">SEND MESSAGE</button>
+                    </div>
+                </div>
+                </form>
+            </div> <!-- /body_get_in_touch -->
+        </div>
+    </section> <!-- /GET IN TOUCH -->
+    <footer class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="footer_menu">
+                    <li class="footer_item"><a href="#">Facebook</a></li>
+                    <li class="footer_item"><a href="#">Twitter</a></li>
+                    <li class="footer_item"><a href="#">Google+</a></li>
+                    <li class="footer_item"><a href="#">LinkedIn</a></li>
+                    <li class="footer_item"><a href="#">Behance</a></li>
+                    <li class="footer_item"><a href="#">Dribbble</a></li>
+                    <li class="footer_item"><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer> <!-- /footer -->
 
 
 
@@ -223,7 +432,11 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- JS-file ProgressBar -->
 <script src="js/progressbar.min.js"></script>
+<script src="js/progressBar.js"></script>
 <!-- Власний JS-файл -->
 <script src="js/common.js"></script>
+
+<a href="#" class="scrollup">UP</a>
+
 </body>
 </html>
